@@ -8,7 +8,11 @@ public class Inventory {
     private String name;
     private int price;
 
-    public Inventory(Long id, String name, int price) {
+    public Inventory() {
+		super();
+	}
+
+	public Inventory(Long id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;

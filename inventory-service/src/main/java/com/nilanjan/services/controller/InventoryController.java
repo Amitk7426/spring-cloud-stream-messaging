@@ -15,6 +15,7 @@ import java.util.List;
 /**
  * @author Nilanjan Roy
  */
+@RestController
 public class InventoryController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(InventoryController.class);
