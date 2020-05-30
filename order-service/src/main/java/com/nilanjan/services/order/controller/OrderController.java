@@ -31,6 +31,7 @@ public class OrderController {
 
     @PostMapping
     public Order process(@RequestBody Order order) throws JsonProcessingException {
+    	LOGGER.info("In Order : {}", mapper.writeValueAsString(order));
         Order o = repository.add(order);
         LOGGER.info("Order saved: {}", mapper.writeValueAsString(order));
         boolean isSent = sender.send(o);
